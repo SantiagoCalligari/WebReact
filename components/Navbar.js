@@ -1,7 +1,6 @@
 import { useRouter } from 'next/router'
 import Link from 'next/link'
 import styles from '/styles/Navbar.module.css'
-import { useEffect } from 'react';
 const RutasDeNavegacion = ["La Merendola", "Contacto"];
 
 function NavigationLink({ href, text, router }) {

@@ -7,13 +7,15 @@ import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import { CardActionArea } from '@mui/material';
 
-export default function Cards({ titulo, cuerpo, imagen, nombreImagen }) {
+export default function Cards({ titulo, cuerpo, imagen }) {
+    const ruta = imagen.replace(/\.[^/.]+$/, "");
+    const nombreImagen=ruta;
     return (
-    <Card sx={{ maxWidth: 250 }}>
-        <CardActionArea>
+    <Card sx={{ width: 250, height: 'auto' }}>
+        <CardActionArea href={ruta}>
             <CardMedia
                 component="img"
-                src={imagen}
+                src={"/Imagenes/"+imagen}
                 alt={nombreImagen}
             />
             <CardContent>
@@ -25,10 +27,6 @@ export default function Cards({ titulo, cuerpo, imagen, nombreImagen }) {
                     </Typography>
             </CardContent>
         </CardActionArea>
-        <CardActions>
-            <Button size="small">Compartir</Button>
-            <Button size="small">Ver Más</Button>
-        </CardActions>
     </Card>
     );
 }
