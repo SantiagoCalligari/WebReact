@@ -2,15 +2,36 @@
 {
     padding-top: 60px;
 }
-.cardContainer
+
+@media (min-width: 20rem)
 {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-gap: 5px;
-    justify-items: center;
-    align-items: center;
+    .cartita
+    {
+        height: 100%;
+        width: 100%;
+    }
+    .cardContainer
+    {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(185px, 1fr));
+            grid-gap: 5px;
+            justify-items: center;
+            align-items: center;
+    }
 }
-.cardContainer div
+@media (min-width: 56rem)
 {
-    margin: 5px;
+    .cartita
+    {
+        height: 100%;
+        width: 100%;
+    }
+    .cardContainer
+    {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            grid-gap: 5px;
+            justify-items: center;
+            align-items: center;
+    }
 }
