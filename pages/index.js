@@ -5,7 +5,6 @@ import { useEffect, useState } from 'react'
 
 export default function Home() {
 
-
   const [dataResponse, setdataResponse] = useState([]);
   useEffect(() =>
   {
@@ -19,13 +18,11 @@ export default function Home() {
     tomarBares();
   }, []);
 
-
-
   return (
   <main className={styles.main}>
     <Cabecera titulo="La Merendola!" />
     <div className={styles.cardContainer}>
-      {dataResponse.map((bar) => <Cards key={bar.Titulo} titulo={bar.Titulo} cuerpo={bar.Cuerpo} imagen={bar.Imagen}/>)} 
+      {dataResponse.map((bar) => <Cards key={bar.Titulo} titulo={bar.Titulo} cuerpo={bar.Cuerpo} imagen={bar.Imagen}/>)}
       {dataResponse.map((bar) => <Cards key={bar.Titulo} titulo={bar.Titulo} cuerpo={bar.Cuerpo} imagen={bar.Imagen}/>)}
       {dataResponse.map((bar) => <Cards key={bar.Titulo} titulo={bar.Titulo} cuerpo={bar.Cuerpo} imagen={bar.Imagen}/>)}
     </div>

@@ -1,10 +1,18 @@
-.main
-{
-    padding-top: 60px;
-}
 
+.cartita:hover
+{
+    z-index: 1;
+    transform: scale(1.05);
+    transition: 0.3s;
+    cursor: pointer;
+}
 @media (min-width: 20rem)
 {
+    .cartita
+    {
+        height: 100%;
+        width: 100%;
+    }
     .cardContainer
     {
             display: grid;
@@ -16,6 +24,11 @@
 }
 @media (min-width: 56rem)
 {
+    .cartita
+    {
+        height: 100%;
+        width: 100%;
+    }
     .cardContainer
     {
             display: grid;
