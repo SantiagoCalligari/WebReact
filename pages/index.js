@@ -17,14 +17,14 @@ export default function Home() {
     }
     tomarBares();
   }, []);
-
   return (
   <main className={styles.main}>
     <Cabecera titulo="La Merendola!" />
     <div className={styles.cardContainer}>
-      {dataResponse.map((bar) => <Cards key={bar.Titulo} titulo={bar.Titulo} cuerpo={bar.Cuerpo} imagen={bar.Imagen}/>)}
-      {dataResponse.map((bar) => <Cards key={bar.Titulo} titulo={bar.Titulo} cuerpo={bar.Cuerpo} imagen={bar.Imagen}/>)}
-      {dataResponse.map((bar) => <Cards key={bar.Titulo} titulo={bar.Titulo} cuerpo={bar.Cuerpo} imagen={bar.Imagen}/>)}
+      {dataResponse.map((bar) => <Cards key={bar.Titulo} data={bar}/>)}
+      {dataResponse.map((bar) => <Cards key={bar.Titulo} data={bar}/>)}
+      {dataResponse.map((bar) => <Cards key={bar.Titulo} data={bar}/>)}
+      {dataResponse.map((bar) => <Cards key={bar.Titulo} data={bar}/>)}
     </div>
   </main>
   )
